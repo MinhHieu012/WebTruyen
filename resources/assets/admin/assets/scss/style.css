@@ -1,0 +1,162 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+.table > :not(caption) > * > * {
+  padding: 5px 10px;
+}
+
+.main-menu .navbar-header {
+  height: 75px;
+  margin-top: 0.25rem !important;
+  display: flex;
+}
+.main-menu .navbar-header .navbar-brand {
+  margin-top: 0 !important;
+}
+.main-menu .navbar-header .navbar-brand .brand-text {
+  color: #009444;
+}
+.main-menu ul {
+  align-items: center;
+  width: 100%;
+}
+.main-menu .menu-content {
+  padding-left: 10px !important;
+}
+.main-menu.menu-light .navigation > li ul li ul > li.has-sub {
+  margin-right: 0;
+}
+.main-menu.menu-light .navigation > li ul li ul li.nav-item a {
+  padding-left: 20px;
+  margin-left: 0;
+}
+.main-menu.menu-light .navigation .navigation-header {
+  margin: 1.286rem 0 0.8rem 2.2rem !important;
+}
+.main-menu .navigation form .btn {
+  font-size: 1.1rem;
+  margin: 0 15px;
+  color: #625f6e;
+  padding: 10px 15px 10px 15px;
+  line-height: 1.45;
+  font-weight: normal;
+}
+.main-menu .navigation form .btn .feather {
+  height: 20px;
+  width: 20px;
+  font-size: 1.45rem;
+  margin-right: 1.1rem;
+  flex-shrink: 0;
+}
+
+table tr td, table tr th {
+  padding: 0.5rem;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.7rem 1.1rem !important;
+}
+
+.disable-action {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+.non-padding-right-desktop {
+  padding-right: 0 !important;
+}
+
+.margin-top-desktop-05 {
+  margin-top: 0.5rem;
+}
+
+.enable-max-width-768 {
+  display: none;
+}
+
+.disable-max-width-768 {
+  display: block;
+}
+@media (max-width: 768px) {
+  .enable-max-width-768 {
+    display: block !important;
+  }
+  .disable-max-width-768 {
+    display: none !important;
+  }
+  .margin-top-mobile {
+    margin-top: 0.5rem;
+  }
+  .margin-top-mobile-075 {
+    margin-top: 0.75rem;
+  }
+  .margin-top-desktop-05 {
+    margin-top: 0 !important;
+  }
+  .mb-1 {
+    margin-bottom: 0.5rem !important;
+  }
+  .non-padding-right-desktop {
+    padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+  }
+  .btnAddMobile {
+    width: 150px;
+    height: 45px;
+    background: #28c76f !important;
+
+    position: fixed;
+    top: 65px;
+    text-align: center;
+    right: 0.75rem;
+    line-height: 40px;
+    color: #fff;
+    font-size: 2rem;
+    z-index: 2;
+    font-weight: bold;
+  }
+  .header-navbar {
+    display: block !important;
+    min-height: unset !important;
+  }
+  .navbar-floating .navbar-container:not(.main-menu-content) {
+    padding: 1rem !important;
+  }
+  .vertical-overlay-menu.menu-open .main-menu {
+    top: 0;
+  }
+  .navbar-floating .navbar-container:not(.main-menu-content) {
+    padding: 0.8rem 1rem !important;
+  }
+  html .content.app-content {
+    padding: 4rem 0 0 0 !important;
+  }
+  .card-header, .card-body {
+    padding: 1rem !important;
+  }
+}
+@media (max-width: 1199px) {
+  .header-navbar {
+    min-height: 40px !important;
+  }
+  .header-navbar.floating-nav {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  html body .app-content-custom {
+    padding-top: 4.5rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .header-navbar {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Repositories\{{modelName}}\{{modelName}}RepositoryInterface;
+use App\Services\{{modelName}}Service;
+use Illuminate\Http\Request;
+
+class {{modelName}}Controller extends Controller
+{
+    public function __construct(
+        protected {{modelName}}RepositoryInterface $repository,
+        protected {{modelName}}Service $service
+    )
+    {
+    }
+
+    public function index(Request $request)
+    {
+        $page_title = '{{modelName}}';
+        $search     = $request->get('search', []);
+        $results    = $this->repository->paginate(20, [], $search);
+    }
+
+    public function create()
+    {
+        //
+    }
+
+    public function store(Request $request)
+    {
+        $attributes = $request->all();
+        $item       = $this->repository->create($attributes);
+    }
+
+    public function show($id)
+    {
+        $item = $this->repository->find($id);
+    }
+
+    public function edit($id)
+    {
+        $item = $this->repository->find($id);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $attributes = $request->all();
+        $item       = $this->repository->update($id, $attributes);
+    }
+
+    public function destroy($id)
+    {
+        $this->repository->delete($id);
+    }
+}

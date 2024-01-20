@@ -1,0 +1,53 @@
+.top-ratings {
+    &__tab {
+        a {}
+
+        .list-group-item.active {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+    }
+
+    &__content {
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .rating-item {
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            &__number {
+                max-width: 30px;
+                width: 100%;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+
+                span {
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    margin-top: 2px;
+                }
+            }
+
+            &__story {
+                &--name {
+                    color: var(--color-primary);
+                    font-weight: 600;
+                }
+
+                &--categories {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+}

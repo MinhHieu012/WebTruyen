@@ -1,0 +1,72 @@
+.story-item {
+    max-width: 150px;
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+    a {
+        position: relative;
+        height: 100%;
+    }
+
+    &__image {
+        overflow: hidden;
+        height: 100%;
+
+        img {
+            transition: all .3s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #f4f4f4;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px;
+        text-shadow: 1px 2px 2px #000;
+        font-size: 0.75rem;
+        display: block;
+        margin-top: 2px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .list-badge {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        display: flex;
+        flex-direction: column;
+
+        .badge {
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // &__badge {
+    //     position: absolute;
+    //     top: 5px;
+    //     left: 5px;
+    // }
+
+    // &__badge-hot {
+    //     top: 30px;
+    // }
+
+    // &__badge-new {
+    //     top: 55px;
+    // }
+}

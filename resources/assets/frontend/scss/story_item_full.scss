@@ -1,0 +1,52 @@
+.story-item-full {
+    max-width: 150px;
+    position: relative;
+
+    @media (max-width: 460px) {
+        max-width: unset;
+    }
+
+    &__image {
+        max-height: 220px;
+        height: 100%;
+        overflow: hidden;
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            transition: all .3s ease;
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+
+    &__name {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px;
+        text-shadow: 1px 2px 2px #000;
+        
+        display: block;
+        margin-top: 2px;
+        text-align: center;
+
+        a {
+            color: #f4f4f4;
+            font-size: 0.75rem;
+        }
+    }
+}

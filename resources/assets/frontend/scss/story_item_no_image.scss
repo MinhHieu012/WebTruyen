@@ -1,0 +1,44 @@
+.story-item-no-image {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #ccc;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    &__name {
+        width: 50%;
+        padding: 10px 0;
+        border-right: 1px dashed #ccc;
+
+        i {
+            font-size: 20px;
+        }
+
+        @media(max-width: 992px) {
+            width: 70%;
+        }
+    }
+
+    &__categories {
+        width: 35%;
+        padding: 10px 0;
+        border-right: 1px dashed #ccc;
+    }
+
+    &__chapters {
+        width: 15%;
+        padding: 10px 0;
+        // border-right: 1px dashed #ccc;
+
+        @media(max-width: 992px) {
+            width: 30%;
+        }
+    }
+
+    &__updated-at {
+        padding: 10px 0;
+        width: 15%;
+    }
+}

@@ -1,0 +1,14 @@
+.story-item-list {
+    &__image {
+        max-width: 100px;
+    }
+
+    &__chapter {
+        position: absolute;
+        right: 0;
+
+        @media (max-width: 992px) {
+            position: unset;
+        }
+    }
+}

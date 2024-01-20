@@ -1,0 +1,9 @@
+@for $i from 1 through 1000 {
+    .mh-#{$i}-px {
+        min-width: #{$i}px !important;
+    }
+
+    .mxh-#{$i}-px {
+        max-width: #{$i}px !important;
+    }
+}

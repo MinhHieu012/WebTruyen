@@ -1,0 +1,120 @@
+.header {
+    // @media (max-width: 992px) {
+    //     position: sticky;
+    //     top: 0;
+    //     z-index: 1021;
+    //     transition: all .3s ease;
+    // }
+
+    .navbar-collapse {
+        @media (max-width: 992px) {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__navbar {
+        background-color: var(--color-primary);
+
+        @media (max-width: 992px) {
+            padding: 8px 0 !important;
+        }
+
+        .nav-item {
+            margin-right: 16px;
+        }
+
+        .nav-link {
+            color: #fff;
+
+            @media(min-width: 768px) {
+                padding: 15px 0;
+            }
+        }
+
+        .nav-link.show {
+            @media(min-width: 768px) {
+                background-color: var(--color-primary-hover);
+            }
+        }
+    }
+
+    &__form-search {
+        position: relative;
+
+        button[type='submit'] {
+            position: absolute;
+            right: 0;
+        }
+
+        .search-result {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 300px;
+            z-index: 1021;
+            max-height: 500px;
+            overflow-y: auto;
+
+            @media(max-width: 992px) {
+                width: 100%;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+
+            .spinner-border {
+
+            }
+        }
+
+        .no-result.search-result {
+            .card-body {
+                padding: 15px !important;
+
+                .spinner-border {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+.header-mobile {
+    transition: all 0.3s linear;
+    position: sticky;
+    z-index: 9999;
+}
+
+.header-mobile.hide-scroll {
+    // opacity: 0;
+    // visibility: hidden;
+    // z-index: -1;
+    top: -64px;
+}
+
+.header-mobile.show-scroll {
+    // position: sticky;
+    top: 0px;
+    width: 100%;
+    // z-index: 500;
+    box-sizing: border-box;
+}
+
+.header-bottom {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    // margin-bottom: 30px;
+}
+
+.dropdown-menu-custom.show {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.settings-theme {
+    width: 300px;
+
+    @media (max-width: 992px) {
+        width: unset;
+    }
+}

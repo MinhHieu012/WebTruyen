@@ -1,0 +1,38 @@
+.section-stories-full {
+    &__list {
+        display: grid;
+        column-gap: 15px;
+        row-gap: 15px;
+
+        @media (max-width: 575px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 460px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        // X-Large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        // XX-Large devices (larger desktops, 1400px and up)
+        @media (min-width: 1400px) {}
+    }
+}

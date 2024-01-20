@@ -1,0 +1,32 @@
+.chapter-content {
+    @media (max-width: 992px) {
+        font-size: 1.25rem;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.chapter-actions-mobile {
+    background: var(--color-primary);
+    padding: 7px 0;
+    position: fixed;
+    bottom: -150px;
+    width: 100%;
+    transition: all .3s ease;
+
+    @media(min-width: 992px) {
+        display: none !important;
+    }
+}
+
+.chapter-actions-mobile.show {
+    bottom: 0;
+}
+
+.chapter-actions-mobile, .chapter-actions {
+    .dropdown-menu.show {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
